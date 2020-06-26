@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "actividad": {
+    "dataSource": "db_mysql",
+    "public": true
+  },
+  "instructor": {
+    "dataSource": "db_mysql",
+    "public": true
+  },
+  "estudiante": {
+    "dataSource": "db_mysql",
+    "public": true
+  },
+  "grupo": {
+    "dataSource": "db_mysql",
+    "public": true
+  },
+  "detgrupo": {
+    "dataSource": "db_mysql",
+    "public": true
+  }
+}
